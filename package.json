@@ -1,0 +1,23 @@
+{
+  "name": "problem-solving",
+  "version": "1.0.0",
+  "description": "Learning problem solving in JavaScript",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurmi-santosh/problem-solving-js.git"
+  },
+  "author": "kurmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurmi-santosh/problem-solving-js/issues"
+  },
+  "homepage": "https://github.com/kurmi-santosh/problem-solving-js#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
