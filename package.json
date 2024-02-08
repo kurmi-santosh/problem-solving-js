@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/kurmi-santosh/problem-solving-js#readme",
   "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
   }
 }
