@@ -1,0 +1,1 @@
+// Minify string AAABB to 3A2B

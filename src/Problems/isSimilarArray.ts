@@ -1,6 +1,6 @@
 /*
    Check whether every number in first array has the corresponding square value in the second array.
-   O(n^2) - Worst case
+   O(n^2) - NAIVE APPROACH
 */
 export const isSimilarArray = (arr1:number[], arr2:number[]) => {
     if(arr1.length != arr2.length){
