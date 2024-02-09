@@ -1,3 +1,5 @@
-import { getSubArrayWithSpecifiedSum } from './Problems/getSubArrayWithSpecifiedSum';
-let result = getSubArrayWithSpecifiedSum([1,2,3,4,5,7,8], 20);
+
+// SORTING
+import { selectionSort} from './SortingAlgorithms/selectionSort';
+let result = selectionSort([1, 2, 6, 3, 9, 4, 10, 5, 7, 8]);
 console.log(result);
