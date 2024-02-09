@@ -2,9 +2,12 @@
     Larget in each iteration will be bubbled at last index and
     and the next loop can be reduced by 1 iteration from the full length.
 
+    WORST : O(n^2)
+    BEST: O(n)
+    
     When we don't introduce noSwaps flag to short circuit
     Outer loop runs even though the array is already sorted.
-    We need to short circuit ths outer loop when there are no swaps happened in the prev iteration.
+    We need to short circuit this outer loop when there are no swaps happened in the prev iteration.
 */
 
 /* 

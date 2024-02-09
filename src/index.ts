@@ -1,5 +1,5 @@
 
 // SORTING
-import { insertionSort} from './SortingAlgorithms/insertionSort';
-let result = insertionSort([1, 2, 6, 3, 9, 4, 10, 5, 7, 8]);
+import { quickSort } from './SortingAlgorithms/quickSort';
+let result = quickSort([4, 8, 2, 1, 5, 7, 6, 9]);
 console.log(result);

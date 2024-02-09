@@ -2,6 +2,9 @@
     Instead of finding the lowest and swapping to first.
     We can consider the left portion from the selection as sorted and put the current element, where it belongs
     
+    WORST : O(n^2)
+    BEST: O(n)
+
     Let's consider the starting element as already sorted portion and 
     take current element from index 1 and compare with the sorted portion
     But this sorted portion is again a sub array...

@@ -6,7 +6,7 @@
     Optimise :
     If the lowest is already at it's place... Then we can avoid unnecessary swapping.
 
-    O(n^2)
+    ALWAYS O(n^2)
 */
 
 /* USING NESTED FOR LOOPS */
