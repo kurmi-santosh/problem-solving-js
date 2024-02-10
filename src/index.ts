@@ -1,5 +1,5 @@
 
 // SORTING
-import { quickSort } from './SortingAlgorithms/quickSort';
-let result = quickSort([4, 8, 2, 1, 5, 7, 6, 9]);
+import { isSubSequence } from './Problems/StringManipulations/isSubSequence';
+let result =  isSubSequence('abc', 'abracadabra');
 console.log(result);

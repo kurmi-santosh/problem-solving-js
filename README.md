@@ -63,3 +63,13 @@ Practice problem solving with JavaScript
   ]
 }
 ```
+
+## Problem solving typeScript
+
+- Frequency counter pattern
+- Multiple pointers
+- Sliding window
+- Divide and Conquer
+- Dynamic Programming
+- Greedy Algorithms
+- Backtracking

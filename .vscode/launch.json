@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Debug TypeScript",
-            "type": "node",
+            "type": "pwa-node",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
