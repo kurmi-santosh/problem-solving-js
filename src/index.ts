@@ -1,5 +1,7 @@
+import { SimpleNode, SinglyLinkedList } from './DataStructures/SinglyLinkedList';
+var first = new SimpleNode('Hi');
 
-// SORTING
-import { isSubSequence } from './Problems/StringManipulations/isSubSequence';
-let result =  isSubSequence('abc', 'abracadabra');
-console.log(result);
+let myList = new SinglyLinkedList();
+myList.push("Santosh");
+myList.push("Naidu")
+console.log(myList)
