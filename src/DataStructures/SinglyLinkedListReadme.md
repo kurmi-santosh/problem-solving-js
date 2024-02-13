@@ -100,3 +100,28 @@
   - Set the prevNode.next to be removedNode.next
   - decrement the length
   - return the removedNode
+
+### Implement reverse
+
+```code
+
+0   curr    nxt
+1   prev    curr    nxt
+2           prev    curr    nxt
+3                   prev    curr  nxt(null)
+    13 -->  27 -->  32 -->  71
+    H                       T
+Rev
+    13      27      32      71
+    T
+
+```
+
+- Swap head and tail
+- 13H is the currentNode
+- Loop through the list
+- Create variables prevNode=null and nextNode
+  - save currentNext as nextNode
+  - now set currentNext as prevNode (which is null)
+  - currentNode becomes your prevNode
+  - and nextNode becomes you currentNode

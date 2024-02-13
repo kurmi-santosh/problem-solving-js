@@ -61,6 +61,16 @@ export class SinglyLinkedList {
 
     }
 
+    print(){
+        var arr = [];
+        var current = this.head;
+        while(current){
+            arr.push(current.value);
+            current = current.next;
+        }
+        console.log(arr);
+    }
+
     unshift(val: any){
         let newNode = new SimpleNode(val);
         if(!this.head) {
@@ -114,6 +124,38 @@ export class SinglyLinkedList {
         }
         this.length--;
         return removedNode;
+    }
+
+/*
+0   curr    nxt 
+1   prev    curr    nxt
+2           prev    curr    nxt
+3                   prev    curr  nxt(null) 
+    13 -->  27 -->  32 -->  71
+    H                       T                              
+    
+    13      27      32      71
+    T
+*/  
+
+    reverse(){
+        var currentNode = this.head;
+        this.head = this.tail;
+        this.tail = currentNode;
+
+        var nextNode:any;
+        var prevNode = null;
+        for(var i=0; i < this.length; i++) {
+            // Save the currentNext (27)
+            nextNode = currentNode.next;
+            // Modify the currentNext to it's prevNode
+            currentNode.next = prevNode;
+            // currentNode becomes prevNode now
+            prevNode = currentNode;
+            // Now make this nextNode as current
+            currentNode = nextNode;
+        }
+        return this;
     }
 }
 
