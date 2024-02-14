@@ -17,7 +17,7 @@ export class SinglyLinkedList {
         this.length = 0;
     }
     
-    push(val:any){
+    push(val:any) {
         let newNode = new SimpleNode(val);
         if(!this.head){
             this.head = newNode;
@@ -32,21 +32,23 @@ export class SinglyLinkedList {
 
     pop(){
         if(!this.head) return undefined;
-        // We are looking for 2nd Last node and set this as new Tail
-        let currentNode = this.head;
-        let newTail = currentNode;
-        while(currentNode.next) {
-            newTail = currentNode;
-            currentNode = currentNode.next; // This currentNode will be eliminated once the loop breaks
-        }
-        this.tail = newTail;
-        this.tail.next = null;
-        this.length--;
-
         if(this.length ==0){
             this.head = null;
             this.tail = null;
         }
+        else{
+            // We are looking for 2nd Last node and set this as new Tail
+            var currentNode = this.head;
+            let newTail = currentNode;
+            while(currentNode.next) {
+                newTail = currentNode;
+                currentNode = currentNode.next;
+                // This currentNode will be eliminated once the loop breaks
+            }
+            this.tail = newTail;
+            this.tail.next = null;
+        }
+        this.length--;
         return currentNode;
     }
 
@@ -57,8 +59,7 @@ export class SinglyLinkedList {
         // Make firstNode's next as new head
         this.head = firstNode.next;
         this.length--;
-        return firstNode;
-
+        return this;
     }
 
     print(){
