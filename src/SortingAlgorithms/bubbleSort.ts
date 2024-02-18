@@ -16,14 +16,14 @@
 export const bubbleSort = (array: number[]) => {
     var noSwaps: boolean;
     for(let i = array.length; i > 0; i--){
-        noSwaps = false;
+        noSwaps = true;
         for(let j = 0; j < i-1; j++){
             if(array[j] > array[j+1]){
                 // SWAP
                 let temp = array[j+1];
                 array[j+1] = array[j];
                 array[j] = temp;
-                noSwaps = true;
+                noSwaps = false;
             }
         }
         if(noSwaps) break;
