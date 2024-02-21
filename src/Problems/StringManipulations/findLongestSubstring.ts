@@ -14,9 +14,9 @@ SLIDING WINDOW O(n**2)
 */
 
 export const findLongestSubstring = (input: string) => {
-    var visited = new Array(256);
     var result = 0;
     for(let i=0; i < input.length; i++) {
+        var visited = new Array(256);
         for(let j=i; j < input.length; j++){
             if(visited[input.charCodeAt(j)] === true){
                 break;
