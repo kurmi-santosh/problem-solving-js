@@ -1,6 +1,14 @@
 /*
     An anagram is a word or phrase formed by changing the order of the letters in another word or phrase.
     For example, 'triangle' is an anagram of 'integral'
+
+    SIVAM    VASSIM
+
+    S:1      S:2   
+    I:1
+    V:1
+    A:1
+    M:1
 */
 
 /*  Frequency counter pattern */

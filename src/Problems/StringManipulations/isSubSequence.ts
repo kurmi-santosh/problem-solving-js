@@ -1,15 +1,16 @@
 /*
-Write a function called isSubsequence that should check whether the characters in the first string 
-appear somewhere in the second string, without their order changing.
+
+Write a function called isSubsequence that should check whether the characters in the 
+first string appear somewhere in the second string, without their order changing.
+
 isSubsequence('hello', 'hello world'); // true
 isSubsequence('sing', 'sting'); // true
-isSubsequence('abc', 'abracadabra'); // true
 isSubsequence('abc', 'acb'); // false (order matters)
 
-S   T   I   N   G
-    i
 S   I   N   G
-        j
+            i
+S   T   I   N   G
+    j
 
 */
 

@@ -27,3 +27,17 @@ export const findNumsToGetFixedSum = (input: number[], target:number) => {
     }
     return triplet;
 }
+
+export const getSubArrayWithSpecifiedSum = (input: number[], sum: number) => {
+    let tempSum = 0;
+    for(let i=0; i <3; i++){
+        tempSum+=input[i];
+    }
+
+    for(let i=3; i <= input.length; i++){
+        if(tempSum == sum) {
+            return [input[i-3], input[i-2], input[i-1]];
+        }
+        tempSum = tempSum - input[i-3] + input[i]
+    }
+}

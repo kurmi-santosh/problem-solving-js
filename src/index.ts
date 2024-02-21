@@ -1,7 +1,3 @@
-import { SimpleNode, SinglyLinkedList } from './DataStructures/Linear/SinglyLinkedList';
-var first = new SimpleNode('Hi');
+import { getThirdMaxFromArray} from './Problems/ArrayManipulations/maxItemFromArray';
 
-let myList = new SinglyLinkedList();
-myList.push("Santosh");
-myList.push("Naidu")
-console.log(myList)
+console.log(getThirdMaxFromArray([2,  6,  7,  10,  9,  3]));
