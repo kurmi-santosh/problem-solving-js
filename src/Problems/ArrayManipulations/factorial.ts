@@ -1,3 +1,0 @@
-/*
-Write a function factorial which accepts a number and returns the factorial of that number.
-*/
