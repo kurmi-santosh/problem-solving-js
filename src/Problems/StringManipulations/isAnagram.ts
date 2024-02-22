@@ -1,14 +1,6 @@
 /*
     An anagram is a word or phrase formed by changing the order of the letters in another word or phrase.
     For example, 'triangle' is an anagram of 'integral'
-
-    SIVAM    VASSIM
-
-    S:1      S:2   
-    I:1
-    V:1
-    A:1
-    M:1
 */
 
 /*  Frequency counter pattern */
@@ -39,4 +31,24 @@ export const isAnagram = (str1 :String, str2: String) => {
     return true;
 }
 
-export default isAnagram;
+export const areAnagram = (str1: String,str2: String) => {
+    // Get lengths of both strings
+    let n1 = str1.length;
+    let n2 = str2.length;
+
+    // If length of both strings is not same,
+    // then they cannot be anagram
+    if (n1 != n2)
+        return false;
+
+    // Sort both strings
+    let array1 = str1.split("").sort();
+    let array2 = str2.split("").sort();
+
+    // Compare sorted strings
+    for (let i = 0; i < array1.length; i++)
+        if (array1[i] != array2[i])
+            return false;
+
+    return true;
+}
